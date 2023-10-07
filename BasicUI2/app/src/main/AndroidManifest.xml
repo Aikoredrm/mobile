@@ -13,10 +13,10 @@
         android:theme="@style/Theme.BasicUI2"
         tools:targetApi="31">
         <activity
-            android:name=".addRecyclingPoint"
+            android:name=".batList"
             android:exported="false" />
         <activity
-            android:name=".paCasa"
+            android:name=".addRecyclingPoint"
             android:exported="false" />
         <activity
             android:name=".SecondActivity"
