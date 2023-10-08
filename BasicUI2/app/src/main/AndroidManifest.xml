@@ -16,10 +16,10 @@
             android:name=".batList"
             android:exported="false" />
         <activity
-            android:name=".addRecyclingPoint"
+            android:name=".RLocation"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".Menu"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,7 +1,6 @@
 package com.example.basicui2;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +12,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-public class LocationsAdaptor extends ArrayAdapter<Location> {
-    public LocationsAdaptor(Context context, ArrayList<Location> locations) {
+public class LocationsAdapter extends ArrayAdapter<Location> {
+    public LocationsAdapter(Context context, ArrayList<Location> locations) {
         super(context, 0, locations);
     }
 

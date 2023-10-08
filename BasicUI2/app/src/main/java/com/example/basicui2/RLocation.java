@@ -8,14 +8,14 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class addRecyclingPoint extends AppCompatActivity {
+public class RLocation extends AppCompatActivity {
 
     ListView lvRecycle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_r_point);
+        setContentView(R.layout.activity_rlocation);
 
         lvRecycle =findViewById(R.id.lv_r1);
 
@@ -28,7 +28,7 @@ public class addRecyclingPoint extends AppCompatActivity {
 
 
 
-        LocationsAdaptor locList= new LocationsAdaptor(this,locs);
+        LocationsAdapter locList= new LocationsAdapter(this,locs);
 
         lvRecycle.setAdapter(locList);
 

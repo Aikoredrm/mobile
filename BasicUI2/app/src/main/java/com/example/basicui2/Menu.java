@@ -5,16 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-public class SecondActivity extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_menu);
 
     }
 
@@ -22,8 +19,13 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
-    public void antes(View view){
-        Intent y= new Intent(this, addRecyclingPoint.class);
+    public void recyclePoints(View view){
+        Intent y= new Intent(this, RLocation.class);
+        startActivity(y);
+    }
+
+    public void batteryPoints(View view){
+        Intent y= new Intent(this, batList.class);
         startActivity(y);
     }
 
