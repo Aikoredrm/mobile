@@ -9,15 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class BatteryAdapter extends ArrayAdapter<Battery> {
-    private ArrayList<Battery> bates;
     public BatteryAdapter(Context context, ArrayList<Battery> batteries) {
         super(context,0, batteries);
-
-        this.bates=batteries;
-
     }
 
     @Override
@@ -33,9 +28,13 @@ public class BatteryAdapter extends ArrayAdapter<Battery> {
         TextView bat = convertView.findViewById(R.id.tv_bateria);
         TextView point = convertView.findViewById(R.id.tv_puntos);
 
-        bat.setText(battery.getType());
-        quan.setText(Integer.toString(battery.getAmount()));
-        point.setText(battery.getPoints());
+        String type= String.format(battery.getType());
+        String qty= Integer.toString(battery.getAmount());
+        String pts = String.format("%s pts.",battery.getPoints());
+
+        bat.setText(type);
+        quan.setText(qty);
+        point.setText(pts);
 
 
         return convertView;
