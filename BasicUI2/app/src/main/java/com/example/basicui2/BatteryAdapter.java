@@ -33,28 +33,10 @@ public class BatteryAdapter extends ArrayAdapter<Battery> {
         TextView bat = convertView.findViewById(R.id.tv_bateria);
         TextView point = convertView.findViewById(R.id.tv_puntos);
 
-        /*
-        HashMap<String,Integer> batter = new HashMap<>();
-
-        for (Battery bata : bates) {
-            if (!batter.containsKey(bata.getType())){
-                batter.put(bata.getType(), 1);
-            }
-        }
-
-        System.out.println(batter);
-
-        if (battery.getType().equals("AAA")) {
-            int x= batter.get("AAA")+1;
-            batter.put("AAA",x);
-            quan.setText(batter.get("AAA").toString());
-            bat.setText("AAA");
-        }
-        */
-
         bat.setText(battery.getType());
         quan.setText(Integer.toString(battery.getAmount()));
         point.setText(battery.getPoints());
+
 
         return convertView;
     }

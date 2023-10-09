@@ -74,6 +74,7 @@
         android:background="@color/red_orange"
         android:textSize="18sp"
         android:text="Resumen puntos"
+        android:onClick="pointsSummary"
         android:layout_weight="1.5"/>
 
     <TextView
@@ -89,7 +90,8 @@
         android:background="@color/red_orange"
         android:textSize="18sp"
         android:text="Recicla tus puntos QR"
-        android:layout_weight="1.5"/>
+        android:layout_weight="1.5"
+        android:onClick="batteryCounter"/>
 
 
     <TextView

@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class batList extends AppCompatActivity {
+public class BatteryList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

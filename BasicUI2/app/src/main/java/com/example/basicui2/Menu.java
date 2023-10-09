@@ -25,7 +25,17 @@ public class Menu extends AppCompatActivity {
     }
 
     public void batteryPoints(View view){
-        Intent y= new Intent(this, batList.class);
+        Intent y= new Intent(this, BatteryList.class);
+        startActivity(y);
+    }
+
+    public void batteryCounter(View view){
+        Intent y = new Intent(this, BatteryCounter.class);
+        startActivity(y);
+    }
+
+    public void pointsSummary(View view){
+        Intent y = new Intent(this, PointsSummary.class);
         startActivity(y);
     }
 
