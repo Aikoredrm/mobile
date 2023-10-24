@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicUI2</string>
+    <string name="for_exit">Exit</string>
+    <string name="address_row">Address</string>
+</resources>
