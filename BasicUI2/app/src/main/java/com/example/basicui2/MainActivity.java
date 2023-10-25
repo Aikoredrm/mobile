@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity{
         etName= findViewById(R.id.etSend);
         etPwd= findViewById(R.id.etSend2);
 
+        UserController.fill();
+
 
     }
 
@@ -31,11 +34,13 @@ public class MainActivity extends AppCompatActivity{
         try {
             user= etName.getText().toString();
             pwd = etPwd.getText().toString();
-            if(user.equalsIgnoreCase("John") && pwd.equalsIgnoreCase("xxx")){
+            User check= UserController.findUser(user,pwd);
+            if(check != null){
                 Intent i = new Intent(this, Menu.class);
                 this.finish();
                 startActivity(i);
             }
+            Toast.makeText(this,"Usuario o contraseña incorrecta",Toast.LENGTH_SHORT);
 
         }catch (Exception e){
             System.out.println(e.getMessage());

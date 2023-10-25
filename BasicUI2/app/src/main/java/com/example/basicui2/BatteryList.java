@@ -20,10 +20,10 @@ public class BatteryList extends AppCompatActivity {
 
         ArrayList<Battery> bats= new ArrayList<>();
 
-        bats.add(new Battery("AAA",3));
-        bats.add(new Battery("Type C",2));
-        bats.add(new Battery("Type D",4));
-        bats.add(new Battery("AA",5));
+        bats.add(new Battery("AAA",1));
+        bats.add(new Battery("Type C",1));
+        bats.add(new Battery("Type D",1));
+        bats.add(new Battery("AA",1));
 
         BatteryAdapter list= new BatteryAdapter(this,bats);
 
